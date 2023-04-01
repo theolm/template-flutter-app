@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:template_flutter/src/features/demo_feature/presentation/demo_viewmodel.dart';
 
 class DemoPage extends StatelessWidget {
   const DemoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var viewmodel = DemoViewModel();
     return Scaffold(
       appBar: AppBar(
         title: Text('Main Page'),
@@ -37,10 +40,12 @@ class DemoPage extends StatelessWidget {
                 const Text(
                   'You have pushed the button this many times:',
                 ),
-                Text(
-                  '0',
-                  style: Theme.of(context).textTheme.headlineMedium,
-                ),
+                Observer(builder: (context) {
+                  return Text(
+                    '${viewmodel.count}',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  );
+                }),
               ],
             ),
           ),
@@ -48,7 +53,9 @@ class DemoPage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {}, //_incrementCounter,
+        onPressed: () {
+          viewmodel.incrementCounter();
+        },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),

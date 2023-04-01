@@ -12,7 +12,6 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  mobx: ^2.1.4
   flutter_mobx: ^2.0.6+5
   get_it: ^7.2.0
   injectable: ^2.1.1
