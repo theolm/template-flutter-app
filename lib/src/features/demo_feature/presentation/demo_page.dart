@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:template_flutter/src/core/di/di.dart';
 import 'package:template_flutter/src/features/demo_feature/presentation/demo_viewmodel.dart';
 
 class DemoPage extends StatelessWidget {
-  const DemoPage({super.key});
+  DemoPage({super.key});
+
+  final DemoViewModel viewmodel = getIt();
 
   @override
   Widget build(BuildContext context) {
-    var viewmodel = DemoViewModel();
     return Scaffold(
       appBar: AppBar(
         title: Text('Main Page'),
