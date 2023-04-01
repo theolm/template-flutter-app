@@ -1,22 +1,7 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
-@RoutePage()
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+class DemoPage extends StatelessWidget {
+  const DemoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +10,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('Main Page'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
             mainAxisSize: MainAxisSize.max,
@@ -43,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
+          Container(height: 32),
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -51,20 +38,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   'You have pushed the button this many times:',
                 ),
                 Text(
-                  '$_counter',
+                  '0',
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ],
             ),
           ),
+          Container(height: 64),
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {}, //_incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
     );
+    ;
   }
 }
 
