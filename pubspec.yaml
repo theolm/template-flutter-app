@@ -15,9 +15,10 @@ dependencies:
   mobx: ^2.1.4
   flutter_mobx: ^2.0.6+5
   get_it: ^7.2.0
-  dynamic_color: ^1.6.2
   injectable: ^2.1.1
+  dynamic_color: ^1.6.2
   google_fonts: ^4.0.3
+  auto_route: ^6.0.5
 
 dev_dependencies:
   flutter_test:
@@ -26,6 +27,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   build_runner: ^2.3.3
   mobx_codegen: ^2.1.1
+  injectable_generator: ^2.1.5
+  auto_route_generator: ^6.0.2
 
 flutter:
   uses-material-design: true

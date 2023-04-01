@@ -348,3 +348,59 @@ CustomColors darkCustomColor = CustomColors(
   red: Colors.red.shade400,
   green: Colors.green.shade400,
 );
+
+ThemeData getLightTheme(ColorScheme lightColorScheme, BuildContext context) {
+  return ThemeData.from(
+    colorScheme: lightColorScheme,
+  ).copyWith(
+    colorScheme: lightColorScheme,
+    dialogTheme: dialogTheme,
+    timePickerTheme: timePickerTheme,
+    appBarTheme: appBarThemeLight(lightColorScheme),
+    useMaterial3: true,
+    textTheme: GoogleFonts.outfitTextTheme(
+      ThemeData.light().textTheme,
+    ),
+    scaffoldBackgroundColor: lightColorScheme.background,
+    dialogBackgroundColor: lightColorScheme.background,
+    navigationBarTheme: navigationBarThemeData(lightColorScheme),
+    applyElevationOverlayColor: true,
+    inputDecorationTheme: inputDecorationTheme,
+    elevatedButtonTheme: elevatedButtonTheme(
+      context,
+      lightColorScheme,
+    ),
+    extensions: [lightCustomColor],
+    dividerTheme: DividerThemeData(
+      color: ThemeData.light().dividerColor,
+    ),
+  );
+}
+
+ThemeData getDarkTheme(ColorScheme darkColorScheme, BuildContext context) {
+  return ThemeData.from(
+    colorScheme: darkColorScheme,
+  ).copyWith(
+    colorScheme: darkColorScheme,
+    dialogTheme: dialogTheme,
+    timePickerTheme: timePickerTheme,
+    appBarTheme: appBarThemeDark(darkColorScheme),
+    useMaterial3: true,
+    textTheme: GoogleFonts.outfitTextTheme(
+      ThemeData.dark().textTheme,
+    ),
+    scaffoldBackgroundColor: darkColorScheme.background,
+    dialogBackgroundColor: darkColorScheme.background,
+    navigationBarTheme: navigationBarThemeData(darkColorScheme),
+    applyElevationOverlayColor: true,
+    inputDecorationTheme: inputDecorationTheme,
+    elevatedButtonTheme: elevatedButtonTheme(
+      context,
+      darkColorScheme,
+    ),
+    extensions: [darkCustomColor],
+    dividerTheme: DividerThemeData(
+      color: ThemeData.dark().dividerColor,
+    ),
+  );
+}
