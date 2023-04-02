@@ -14,15 +14,15 @@ jobs:
           distribution: 'zulu'
           java-version: '11'
 
-      - name: Setup Dart version
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: '2.19.5'
+      # - name: Setup Dart version
+      #   uses: dart-lang/setup-dart@v1
+      #   with:
+      #     sdk: '2.19.5'
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.7'
+          flutter-version: '3.7.8'
           channel: 'stable'
 
       - run: flutter --version
