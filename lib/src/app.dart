@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'core/settings/theme/app_theme.dart';
-import 'core/presenter/routes/app_route.dart';
+import 'core/routes/app_route.dart';
 
 class App extends StatelessWidget {
   App({super.key});
