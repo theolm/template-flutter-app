@@ -7,7 +7,7 @@ part 'demo_viewmodel.g.dart';
 
 @injectable
 class DemoViewModel extends _DemoViewModelBase with _$DemoViewModel {
-  DemoViewModel(IIncrementUseCase incrementUseCase) : super(incrementUseCase);
+  DemoViewModel(super.incrementUseCase);
 }
 
 abstract class _DemoViewModelBase with Store {
