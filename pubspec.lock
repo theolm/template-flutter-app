@@ -37,18 +37,18 @@ packages:
     dependency: "direct main"
     description:
       name: auto_route
-      sha256: "72f21e8b6cbbe25f02ea69183e024996530bf495cc1b077a49e0ec6726f0c271"
+      sha256: "82f8df1d177416bc6b7a449127d0270ff1f0f633a91f2ceb7a85d4f07c3affa1"
       url: "https://pub.dev"
     source: hosted
-    version: "7.8.3"
+    version: "7.8.4"
   auto_route_generator:
     dependency: "direct dev"
     description:
       name: auto_route_generator
-      sha256: e7aa9ab44b77cd31a4619d94db645ab5736e543fd0b4c6058c281249e479dfb8
+      sha256: "11067a3bcd643812518fe26c0c9ec073990286cabfd9d74b6da9ef9b913c4d22"
       url: "https://pub.dev"
     source: hosted
-    version: "7.3.1"
+    version: "7.3.2"
   boolean_selector:
     dependency: transitive
     description:
@@ -189,10 +189,10 @@ packages:
     dependency: "direct main"
     description:
       name: dynamic_color
-      sha256: "96bff3df72e3d428bda2b874c7a521e8c86f592cae626ea594922fcc8d166e0c"
+      sha256: "8b8bd1d798bd393e11eddeaa8ae95b12ff028bf7d5998fc5d003488cd5f4ce2f"
       url: "https://pub.dev"
     source: hosted
-    version: "1.6.7"
+    version: "1.6.8"
   fake_async:
     dependency: transitive
     description:
@@ -234,18 +234,18 @@ packages:
     dependency: "direct dev"
     description:
       name: flutter_lints
-      sha256: a25a15ebbdfc33ab1cd26c63a6ee519df92338a9c10f122adda92938253bef04
+      sha256: ad76540d21c066228ee3f9d1dad64a9f7e46530e8bb7c85011a88bc1fd874bc5
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.3"
+    version: "3.0.0"
   flutter_mobx:
     dependency: "direct main"
     description:
       name: flutter_mobx
-      sha256: "0da4add0016387a7bf309a0d0c41d36c6b3ae25ed7a176409267f166509e723e"
+      sha256: a3f2c45611fc7a8c65981b35f3095f4ea41595c0e108fd7e7c1828a6e648c21e
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.6+5"
+    version: "2.1.0+1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -279,10 +279,10 @@ packages:
     dependency: "direct main"
     description:
       name: google_fonts
-      sha256: "0833bfcc1c32560ee51d381fcf1d6d6b35921e89afe852c12f83dc8c00b2e6bc"
+      sha256: f0b8d115a13ecf827013ec9fc883390ccc0e87a96ed5347a3114cac177ef18e8
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.0"
+    version: "6.1.0"
   graphs:
     dependency: transitive
     description:
@@ -319,18 +319,18 @@ packages:
     dependency: "direct main"
     description:
       name: injectable
-      sha256: "5217c45fec809286a7b1b4fbcbd70aab1662bf18d9eb207490df421323f7883f"
+      sha256: cd3c422e13270c81f64ab73c80406b2b2ed563fe59d0ff2093eb7eee63d0bbeb
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.0"
+    version: "2.3.2"
   injectable_generator:
     dependency: "direct dev"
     description:
       name: injectable_generator
-      sha256: "5c21787f854dfb94c9e50c43788f93232867ad80ada38a6db81e0bbb51ee5905"
+      sha256: f9d3c05f0938403f79ad6c6d23ec8e37a7a05ad980b1bf9399493f3e41845788
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.0"
+    version: "2.4.1"
   io:
     dependency: transitive
     description:
@@ -359,10 +359,10 @@ packages:
     dependency: transitive
     description:
       name: lints
-      sha256: "0a217c6c989d21039f1498c3ed9f3ed71b354e69873f13a8dfc3c9fe76f1b452"
+      sha256: cbf8d4b858bb0134ef3ef87841abdf8d63bfc255c266b7bf6b39daa1085c4290
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.1"
+    version: "3.0.0"
   logging:
     dependency: transitive
     description:
@@ -380,7 +380,7 @@ packages:
     source: hosted
     version: "0.12.16"
   material_color_utilities:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: material_color_utilities
       sha256: "9528f2f296073ff54cb9fee677df673ace1218163c3bc7628093e7eed5203d41"
@@ -404,21 +404,29 @@ packages:
     source: hosted
     version: "1.0.4"
   mobx:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: mobx
-      sha256: "0afcf88b3ee9d6819890bf16c11a727fc8c62cf736fda8e5d3b9b4eace4e62ea"
+      sha256: "42ae7277ec5c36fa5ce02aa14551065babce3c38a35947330144ff47bc775c75"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.0"
+    version: "2.2.1"
   mobx_codegen:
     dependency: "direct dev"
     description:
       name: mobx_codegen
-      sha256: d4beb9cea4b7b014321235f8fdc7c2193ee0fe1d1198e9da7403f8bc85c4407c
+      sha256: "52a6904b93fa1ceadc5ed4cd67e24fd05a21340d39cff0a213179fc83e179dba"
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.0"
+    version: "2.4.0"
+  nested:
+    dependency: transitive
+    description:
+      name: nested
+      sha256: "03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   package_config:
     dependency: transitive
     description:
@@ -515,6 +523,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.5.1"
+  provider:
+    dependency: transitive
+    description:
+      name: provider
+      sha256: cdbe7530b12ecd9eb455bdaa2fcb8d4dad22e80b8afb4798b41479d5ce26847f
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.5"
   pub_semver:
     dependency: transitive
     description:

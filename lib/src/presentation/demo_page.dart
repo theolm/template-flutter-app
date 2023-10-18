@@ -12,7 +12,7 @@ class DemoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Main Page'),
+        title: const Text('Main Page'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -62,7 +62,6 @@ class DemoPage extends StatelessWidget {
         child: const Icon(Icons.add),
       ),
     );
-    ;
   }
 }
 
@@ -71,10 +70,10 @@ class SchemeColorBox extends StatelessWidget {
   final Color color;
 
   const SchemeColorBox({
-    Key? key,
+    super.key,
     required this.label,
     required this.color,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
