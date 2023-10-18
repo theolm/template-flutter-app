@@ -8,3 +8,7 @@ This template contains:
 
 ## Credits
 The coded used on the base theme was taken from the app [Paisa](https://github.com/RetroMusicPlayer/Paisa)
+
+[//]: # (flutter pub run build_runner clean)
+[//]: # (flutter pub run build_runner build)
+[//]: # (flutter pub run build_runner watch)
