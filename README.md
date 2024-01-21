@@ -7,7 +7,7 @@ This template contains:
 - Pre-defined theme using dynamic colors
 
 ## Credits
-The coded used on the base theme was taken from the app [Paisa](https://github.com/RetroMusicPlayer/Paisa)
+The code used on the base theme was taken from the app [Paisa](https://github.com/RetroMusicPlayer/Paisa)
 
 [//]: # (flutter pub run build_runner clean)
 [//]: # (flutter pub run build_runner build)
